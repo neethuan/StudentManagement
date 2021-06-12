@@ -1,0 +1,26 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MarkController;
+use App\Http\Controllers\StudentController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', [StudentController::class, 'index']);
+
+Route::resource('student', StudentController::class)->except([
+    'show'
+    ]);
+    
+Route::resource('mark', MarkController::class)->except([
+    'show'
+    ]);
