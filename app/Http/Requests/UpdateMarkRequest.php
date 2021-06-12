@@ -13,9 +13,9 @@ class UpdateMarkRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'science' => 'required|numeric',
-            'history' => 'required|numeric',
-            'maths' => 'required|numeric',
+            'science' => 'required|numeric|min:0|max:100',
+            'history' => 'required|numeric|min:0|max:100',
+            'maths' => 'required|numeric|min:0|max:100',
         ];
     }
 }

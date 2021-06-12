@@ -18,15 +18,15 @@
                     <form action="{{ route('student.store') }}" method="POST" >
                         @CSRF
                         <div class="form-group col-md-12">
-                            <label for="name" class="col-sm-2 col-form-label">Name</label>
+                            <label for="Name" class="col-sm-2 col-form-label">Name</label>
                             <div class="col-sm-10">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                             </div>
                         </div>
                         <div class="form-group col-md-12">
-                            <label for="age" class="col-sm-2 col-form-label">Age</label>
+                            <label for="Age" class="col-sm-2 col-form-label">Age</label>
                             <div class="col-sm-10">
-                            <input type="text" min=17 max=30 class="form-control" id="age" name="age" placeholder="age" required>
+                            <input type="text" min=17 max=30 class="form-control" id="age" name="age" placeholder="Age" required>
                             </div>
                         </div>
                         <fieldset class="form-group col-md-12">
@@ -48,7 +48,7 @@
                         </fieldset>
 
                         <div class="form-group col-md-12">
-                            <label for="inputState" class="col-sm-2 col-form-label">Teacher</label>
+                            <label for="Teacher" class="col-sm-2 col-form-label">Teacher</label>
                             <div class="col-sm-10">
                                 <select id="teacher_id" class="form-control"  name="teacher_id" required>
                                     @foreach ($teachers as $teacher)

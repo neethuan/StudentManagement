@@ -13,10 +13,10 @@ class UpdateStudentRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required',
-            'age' => 'required',
+            'name' => 'required|max:50',
+            'age' => 'required|numeric|min:15|max:50',
             'gender' => 'required',
-            'teacher_id' => 'required'
+            'teacher_id' => 'required|numeric'
         ];
     }
 }

@@ -20,15 +20,15 @@
                 @CSRF
                 {{ method_field('PUT') }}
                 <div class="form-group col-md-12">
-                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <label for="Name" class="col-sm-2 col-form-label">Name</label>
                     <div class="col-sm-10">
                     <input type="text" required class="form-control" id="name" name="name" value="{{ $student->name}}">
                     </div>
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="age" class="col-sm-2 col-form-label">Age</label>
+                    <label for="Age" class="col-sm-2 col-form-label">Age</label>
                     <div class="col-sm-10">
-                    <input type="text" required class="form-control" id="age" name="age" value="{{ $student->age}}">
+                    <input type="number" min=17 max=30 required class="form-control" id="age" name="age" value="{{ $student->age}}">
                     </div>
                 </div>
                 <fieldset class="form-group col-md-12">
@@ -51,7 +51,7 @@
 
                 <div class="form-group col-md-9">
                     <div class="col-sm-10">
-                        <label for="inputState ">Teacher</label>
+                        <label for="Teacher ">Teacher</label>
                     </div>
                     <div class="col-sm-10">
                         <select id="teacher_id" class="form-control"  name="teacher_id" required>

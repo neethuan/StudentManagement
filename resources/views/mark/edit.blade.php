@@ -20,7 +20,7 @@
                 @CSRF
                 {{ method_field('PUT') }}
                 <div class="form-group col-md-4">
-                    <label for="inputState">Student</label>
+                    <label for="Student">Student</label>
                     <select id="student_id" class="form-control"  name="student_id" disabled>
                         <option>Open this select menu</option>
                         @foreach($students as $student)
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="form-group col-md-4">
-                    <label for="inputState">Term</label>
+                    <label for="Term">Term</label>
                     <select id="term_id" class="form-control"  name="term_id" disabled>
                     <option>Open this select menu</option>
                     @foreach($terms as $term)
@@ -39,23 +39,23 @@
                     </select>
                 </div>
                 <div class="form-group row">
-                    <label for="maths" class="col-sm-2 col-form-label">Maths</label>
+                    <label for="Maths" class="col-sm-2 col-form-label">Maths</label>
                     <div class="col-sm-10">
-                    <input type="text" required min=0 max=100 class="form-control" id="maths" name="maths" placeholder="maths" value="{{ old('maths')?old('maths'):$mark->maths }}">
+                    <input type="number" required min=0 max=100 class="form-control" id="maths" name="maths" placeholder="maths" value="{{ old('maths')?old('maths'):$mark->maths }}">
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="science" class="col-sm-2 col-form-label">Science</label>
+                    <label for="Science" class="col-sm-2 col-form-label">Science</label>
                     <div class="col-sm-10">
-                    <input type="text" required min=0 max=100 class="form-control" id="science" name="science" placeholder="science" value="{{ old('science')?old('maths'):$mark->maths }}" >
+                    <input type="number" required min=0 max=100 class="form-control" id="science" name="science" placeholder="science" value="{{ old('science')?old('maths'):$mark->maths }}" >
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="history" class="col-sm-2 col-form-label">History</label>
+                    <label for="History" class="col-sm-2 col-form-label">History</label>
                     <div class="col-sm-10">
-                    <input type="text" required min=0 max=100 class="form-control" id="history" name="history" placeholder="history" value="{{ old('history')?old('history'):$mark->history }}">
+                    <input type="number" required min=0 max=100 class="form-control" id="history" name="history" placeholder="history" value="{{ old('history')?old('history'):$mark->history }}">
                     </div>
                 </div>
 

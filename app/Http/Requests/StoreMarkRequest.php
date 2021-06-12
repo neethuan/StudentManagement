@@ -25,9 +25,9 @@ class StoreMarkRequest extends FormRequest
                 Rule::unique('marks')
                 ->where('student_id', $this->student_id)
             ],
-            'science' => 'required|numeric',
-            'history' => 'required|numeric',
-            'maths' => 'required|numeric',
+            'science' => 'required|numeric|min:0|max:100',
+            'history' => 'required|numeric|min:0|max:100',
+            'maths' => 'required|numeric|min:0|max:100',
             ];
     }
 }

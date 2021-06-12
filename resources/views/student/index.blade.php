@@ -24,7 +24,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Gender</th>
                         <th scope="col">Age</th>
-                        <th scope="col">Teacher</th>
+                        <th scope="col">Reporting Teacher</th>
                         <th scope="col">Action</th>
                         </tr>
                     </thead>
